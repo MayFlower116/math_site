@@ -7,14 +7,25 @@
 #26233a - softer black - button text
 */
 
+html, body {
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
 h1, h2, p {
      font-family: 'Montserrat', sans-serif;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 body {
     display: flex;
-    grid-template-columns: 20% 80%;
     background-color: #191724;
+    grid-row: 100%;
+    
 }
 
 .sidebar {
@@ -23,25 +34,42 @@ body {
     color: #F09EB5;
     padding: 5px;
     margin: 0%;
+    width: 20%;
+    
 }
 
 .main_area {
     color: #F09EB5;
     padding: 5px;
+    width: 80%;
 }
 
-html, body {
+.work_area {
+    display: grid;
+}
 
-
-
-    margin:0;
-    
-    padding:0;
-    
-    
-    
+.course_container {
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 10px;
+    text-align: left;
 }
 
 
+.item1 {/*new note*/
+    grid-column: 1 / span 2;
+}
+.item2 {/*dark theme*/
+    grid-column: 3 / span 2;
+}
+.item3 {/*textbox*/
+    grid-column: 1 / span 4;
+}
+.item4 {/*empty space left of item5*/
+    grid-column: 1 / span 3;
+}
+.item5 {/*save/cancel buttons*/
+    /*  */
+}
 
 
