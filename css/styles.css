@@ -1,19 +1,20 @@
 /* Palette
-#555169 - light grey - sidebar bg;
+##26233A - light grey - sidebar bg, textbox bg
 #191724 - black - primary bg
-#F09EB5 - soft pink - text, buttons
+#F09EB5 - soft pink - text, buttons, textbox border
 #f6c177 - soft gold - alternate text, alternate buttons
 #9ccfd8 - pale tuqoise - contrasting button
 #26233a - softer black - button text
 */
 
+/* general */
 html, body {
     margin:0;
     padding:0;
     height: 100%;
 }
 
-h1, h2, p {
+h1, h2, p, button, textarea {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -30,7 +31,7 @@ body {
 
 .sidebar {
     /*  */
-    background-color: #555169;
+    background-color: #26233A;
     color: #F09EB5;
     padding: 5px;
     margin: 0%;
@@ -45,34 +46,7 @@ body {
 }
 
 
-
-.upper_buttons{
-    display: flex;
-    justify-content: space-between;
-}
-
-.lower_buttons {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-}
-
-.note_area {
-    margin: 20px;
-}
-
-textarea {
-    width: 100%;
-    padding: 5px;
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 5px solid #F09EB5;
-    background-color: aquamarine;
-    color: blueviolet;
-    resize: none;
-}
-
-
+/* Header */
 header li {
     display: inline;
     font-family: 'Montserrat', sans-serif;
@@ -83,18 +57,37 @@ header ul {
     text-align: right;
 }
 
-button {
-    background-color:#F09EB5;
-    color: #26233a;
-    min-width: 110px;
-    /* width: 30%; */
-    text-align: center;
-    padding: 5px 10px;
-    height: 40px;
-    border-radius: 10px;
+/* Main content (see buttons at bottom)*/
+
+.upper_buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.note_area {
+    margin: 10px;
+    margin-right: 25px;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 3px solid #F09EB5;
+    background-color: #26233A;
+    color: #F09EB5;
+    resize: none;
+}
+
+.lower_buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 
+/* Footer */
 main footer {
     position: fixed;
     bottom: 0;
@@ -106,5 +99,38 @@ main footer {
     display: flex;
     justify-content: center;
 }
+
+/* Buttons */
+
+.standard_button {
+    background-color:#F09EB5;
+    color: #26233a;
+    min-width: 110px;
+    text-align: center;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.neg_button {
+    background-color:#9ccfd8;
+    color: #26233a;
+    min-width: 110px;
+    text-align: center;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.other_button {
+    background-color:#f6c177;
+    color: #26233a;
+    min-width: 110px;
+    text-align: center;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 10px;
+}
+
 
 
