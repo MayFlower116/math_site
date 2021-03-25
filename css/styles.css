@@ -46,7 +46,7 @@ body {
 
 
 
-.upper_buttons {
+.upper_buttons{
     display: flex;
     justify-content: space-between;
 }
@@ -95,5 +95,16 @@ button {
 }
 
 
+main footer {
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    
+}
+
+.foot_images {
+    display: flex;
+    justify-content: center;
+}
 
 
