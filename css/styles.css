@@ -1,9 +1,47 @@
-a {
-    color: #f6c177;
-    color: #191724;
-    color: #F09EB5;
-    color: #f6c177;
-    color: #f6c177;
-    color: #f6c177;
+/* Palette
+#555169 - light grey - sidebar bg;
+#191724 - black - primary bg
+#F09EB5 - soft pink - text, buttons
+#f6c177 - soft gold - alternate text, alternate buttons
+#9ccfd8 - pale tuqoise - contrasting button
+#26233a - softer black - button text
+*/
+
+h1, h2, p {
+     font-family: 'Montserrat', sans-serif;
 }
+
+body {
+    display: flex;
+    grid-template-columns: 20% 80%;
+    background-color: #191724;
+}
+
+.sidebar {
+    /*  */
+    background-color: #555169;
+    color: #F09EB5;
+    padding: 5px;
+    margin: 0%;
+}
+
+.main_area {
+    color: #F09EB5;
+    padding: 5px;
+}
+
+html, body {
+
+
+
+    margin:0;
+    
+    padding:0;
+    
+    
+    
+}
+
+
+
 
