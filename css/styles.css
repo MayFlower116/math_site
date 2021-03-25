@@ -14,7 +14,7 @@ html, body {
 }
 
 h1, h2, p {
-     font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2 {
@@ -46,30 +46,47 @@ body {
 
 .work_area {
     display: grid;
+    
 }
 
-.course_container {
-    display: grid;
-    grid-template-columns: 20% auto;
-    gap: 10px;
-    text-align: left;
-}
+
 
 
 .item1 {/*new note*/
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 1;
 }
 .item2 {/*dark theme*/
-    grid-column: 3 / span 2;
+    grid-column: 4 / span 1;
 }
 .item3 {/*textbox*/
     grid-column: 1 / span 4;
 }
-.item4 {/*empty space left of item5*/
-    grid-column: 1 / span 3;
+
+.item4 {/*save/cancel buttons*/
+    text-align: right;
+    grid-column: 4 / span 1;
 }
-.item5 {/*save/cancel buttons*/
-    /*  */
+
+header li {
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+}
+
+header ul {
+    text-align: right;
+}
+
+button {
+    background-color:#F09EB5;
+    color: #26233a;
+    min-width: 110px;
+    width: 30%;
+    text-align: center;
+    
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 10px;
 }
 
 
