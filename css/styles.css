@@ -51,24 +51,25 @@ body {
     justify-content: space-between;
 }
 
-/* .lower_buttons {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    padding: 10px;
-  }
-
-.item4 {
-    grid-column-start: 4;
-    background-color: #2196F3;
-    margin-right: 0%;
-} */
-
 .lower_buttons {
     display: flex;
-    align-items:unset;
     justify-content: flex-end;
     width: 100%;
+}
+
+.note_area {
+    margin: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 5px solid #F09EB5;
+    background-color: aquamarine;
+    color: blueviolet;
+    resize: none;
 }
 
 
