@@ -51,11 +51,26 @@ body {
     justify-content: space-between;
 }
 
+/* .lower_buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+.item4 {
+    grid-column-start: 4;
+    background-color: #2196F3;
+    margin-right: 0%;
+} */
+
 .lower_buttons {
     display: flex;
-    text-align: right;
-    justify-content: space-between;
+    align-items:unset;
+    justify-content: flex-end;
+    width: 100%;
 }
+
 
 header li {
     display: inline;
