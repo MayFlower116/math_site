@@ -44,27 +44,17 @@ body {
     width: 80%;
 }
 
-.work_area {
-    display: grid;
-    
+
+
+.upper_buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
-
-
-
-.item1 {/*new note*/
-    grid-column: 1 / span 1;
-}
-.item2 {/*dark theme*/
-    grid-column: 4 / span 1;
-}
-.item3 {/*textbox*/
-    grid-column: 1 / span 4;
-}
-
-.item4 {/*save/cancel buttons*/
+.lower_buttons {
+    display: flex;
     text-align: right;
-    grid-column: 4 / span 1;
+    justify-content: space-between;
 }
 
 header li {
@@ -81,12 +71,13 @@ button {
     background-color:#F09EB5;
     color: #26233a;
     min-width: 110px;
-    width: 30%;
+    /* width: 30%; */
     text-align: center;
-    
     padding: 5px 10px;
     height: 40px;
     border-radius: 10px;
 }
+
+
 
 
