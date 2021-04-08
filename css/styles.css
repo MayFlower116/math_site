@@ -1,5 +1,5 @@
 /* Palette
-##26233A - light grey - sidebar bg, textbox bg
+##26233A - light grey - aside bg, textbox bg
 #191724 - black - primary bg
 #F09EB5 - soft pink - text, buttons, textbox border
 #f6c177 - soft gold - alternate text, alternate buttons
@@ -12,22 +12,19 @@ html, body {
     margin:0;
     padding:0;
     height: 100%;
+    background-color: #191724; /*bg color moved here from separate body selector*/
 }
 
-h1, h2, p, button, textarea {
+h1, h2, p, button, textarea, body {
     font-family: 'Montserrat', sans-serif;
+    /*Body added to be affected by font family, font family removed where redundant*/
 }
 
 h1, h2 {
     text-align: center;
 }
 
-body {
-    background-color: #191724;
-    
-}
-
-.sidebar {
+.aside {/*sidebar renamed to aside*/
     /*  */
     background-color: #26233A;
     color: #F09EB5;
@@ -40,14 +37,13 @@ body {
 .main_area {
     color: #F09EB5;
     padding: 5px;
-    width: 100%;
+    width: 100%; /*width adjusted to make page look right on smaller screens*/
 }
 
 
 /* Header */
 header li {
     display: inline;
-    font-family: 'Montserrat', sans-serif;
     padding: 5px;
 }
 
@@ -98,37 +94,31 @@ textarea {
 
 /* Buttons */
 
-.standard_button {
-    background-color:#F09EB5;
+/*Redundant content in button class selectors moved to button element selector*/
+
+button {
     color: #26233a;
     min-width: fit-content;
     text-align: center;
     padding: 5px 10px;
     height: 40px;
     border-radius: 10px;
+}
+
+.standard_button {
+    background-color:#F09EB5;
 }
 
 .neg_button {
     background-color:#9ccfd8;
-    color: #26233a;
-    min-width: fit-content;
-    text-align: center;
-    padding: 5px 10px;
-    height: 40px;
-    border-radius: 10px;
 }
 
 .other_button {
     background-color:#f6c177;
-    color: #26233a;
-    min-width: fit-content;
-    text-align: center;
-    padding: 5px 10px;
-    height: 40px;
-    border-radius: 10px;
 }
 
 
+/* Responsive */
 
 
 @media screen and (min-width: 600px) {
@@ -138,13 +128,13 @@ textarea {
         flex-direction: row-reverse;
     }
 
-    .sidebar {
+    .aside { /*sidebar renamed to aside*/
         width: 20%;
     }
 
     .main_area footer {
     position: fixed;
-    width: 80%;
+    width: 80%; /*width adjusted to make page look right on smaller screens*/
     }
 }
 
