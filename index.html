@@ -2,13 +2,15 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- current branch = N/A 
+<!-- current branch = assignment2-p1 
 Update as changed -->
 
 <head>
     <meta charset="utf-8" />
     <title>index</title>
     <link href="css/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- forgot to add the meta tage here for responsive design purposes -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     </style>
@@ -16,14 +18,7 @@ Update as changed -->
 
 
 <body>
-    <section class="sidebar">
-        <h2>My Notes</h2>
-        <ul>
-            <li><p>Note 1</p></li>
-            <li><p>Note 2</p></li>
-        </ul>
-    </section>
-    <main class="main_area">
+    <section class="main_area">
         <header>
             <!-- text at top -->
             <h1>Take Better Notes</h1>
@@ -34,8 +29,7 @@ Update as changed -->
                 </ul>
             </nav>
         </header>
-
-        <section>
+        <main>
             <div class="upper_buttons">
                 <button class="standard_button">New Note</button>
                 <button  class="other_button">Dark Mode</button>
@@ -48,7 +42,7 @@ Update as changed -->
                 <button  class="standard_button">Save</button>
                 <button class="neg_button">Cancel</button>
             </div>
-        </section>
+        </main>
 
         <footer>
             <h2>Keep in Touch</h2>
@@ -57,7 +51,16 @@ Update as changed -->
                 <img src="images/Internet_Line-02-512.jpg" alt="Internet Line logo" width="50" height="50" />
             </picture>
         </footer>
-    </main>
+    </section>
+    <section class="sidebar">
+        <!--Sidebar section moved as part of making it appear under the main
+            section when viewing the page at a smaller scale.-->
+        <h2>My Notes</h2>
+        <ul>
+            <li><p>Note 1</p></li>
+            <li><p>Note 2</p></li>
+        </ul>
+    </section>
 </body>
 
 </html>

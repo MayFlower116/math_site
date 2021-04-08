@@ -40,7 +40,7 @@ body {
 .main_area {
     color: #F09EB5;
     padding: 5px;
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -86,7 +86,7 @@ textarea {
 
 
 /* Footer */
-main footer {
+.main_area footer {
     bottom: 0;
     width: inherit;
 }
@@ -135,15 +135,17 @@ main footer {
     body {
         display: flex;
         grid-row: 100%;
+        flex-direction: row-reverse;
     }
 
     .sidebar {
         width: 20%;
     }
 
-    main footer {
+    .main_area footer {
     position: fixed;
-}
+    width: 80%;
+    }
 }
 
 
