@@ -136,7 +136,7 @@
     //}
 /**/
 
-const btn = document.querySelector("button");
+
 
 function change_palette() {
     document.body.classList.toggle("dark_palette")
@@ -150,7 +150,22 @@ function change_palette() {
     const textarea = document.querySelector("textarea")
     textarea.classList.toggle("dark_palette")
 
-    btn.classList.toggle("dark_palette")
+    const new_note_btn = document.getElementById("new_note");
+    new_note_btn.classList.toggle("dark_palette")
+
+    const color_mode_btn = document.getElementById("color_mode")
+    if (color_mode_btn.textContent === "Dark Mode") {
+        color_mode_btn.textContent = "Light Mode";
+    } else {
+        color_mode_btn.textContent = "Dark Mode";
+    }
+    color_mode_btn.classList.toggle("dark_palette")
+
+    const save_btn = document.getElementById("save");
+    save_btn.classList.toggle("dark_palette")
+
+    const cancel_btn = document.getElementById("cancel");
+    cancel_btn.classList.toggle("dark_palette")
 }
 
 
