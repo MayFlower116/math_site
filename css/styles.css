@@ -13,10 +13,15 @@ html, body {
     padding:0;
     height: 100%;
     background-color: #191724; /*bg color moved here from separate body selector*/
-    font-family: 'Montserrat', sans-serif;
+}
+body.dark_palette {
+    background-color: #7e6fcf; /*bg color moved here from separate body selector */
 }
 
-
+h1, h2, p, button, textarea, body {
+    font-family: 'Montserrat', sans-serif;
+    /*Body added to be affected by font family, font family removed where redundant*/
+}
 
 h1, h2 {
     text-align: center;
@@ -28,14 +33,19 @@ aside {/*sidebar renamed to aside*/
     color: #F09EB5;
     padding: 5px;
     margin: 0%;
-    
-    
+}
+aside.dark_palette {
+    background-color: #F09EB5;
+    color: #26233A;
 }
 
 .main_area {
-    color: #F09EB5;
+    color: #220f14;
     padding: 5px;
     width: 100%; /*width adjusted to make page look right on smaller screens*/
+}
+.main_area.dark_palette {
+    color: #F09EB5;
 }
 
 
@@ -66,10 +76,15 @@ textarea {
     padding: 5px;
     line-height: 1.5;
     border-radius: 5px;
+    border: 3px solid #440c1c;
+    background-color: #6558bd;
+    color: #5e2837;
+    resize: none;
+}
+textarea.dark_palette {
     border: 3px solid #F09EB5;
     background-color: #26233A;
     color: #F09EB5;
-    resize: none;
 }
 
 .lower_buttons {
@@ -95,23 +110,35 @@ textarea {
 /*Redundant content in button class selectors moved to button element selector*/
 
 button {
-    color: #26233a;
+    color: #a89fe2;
     min-width: fit-content;
     text-align: center;
     padding: 5px 10px;
     height: 40px;
     border-radius: 10px;
 }
+button.dark_palette {
+    color: #26233a;
+}
 
 .standard_button {
+    background-color:#500318;
+}
+.standard_button.dark_palette{
     background-color:#F09EB5;
 }
 
 .neg_button {
+    background-color:#015564;
+}
+.neg_button.dark_palette{
     background-color:#9ccfd8;
 }
 
 .other_button {
+    background-color:#774500;
+}
+.other_button.dark_palette{
     background-color:#f6c177;
 }
 
@@ -122,6 +149,7 @@ button {
 @media screen and (min-width: 600px) {
     body {
         display: flex;
+        grid-row: 100%;
         flex-direction: row-reverse;
     }
 

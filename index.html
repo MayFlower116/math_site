@@ -14,11 +14,12 @@ Update as changed -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     </style>
+    <script defer src="scripts/javascript.js"> </script>
 </head>
 
 
-<body>
-    <div class="main_area">
+<body class="dark_palette">
+    <div class="main_area dark_palette">
         <header>
             <!-- text at top -->
             <h1>Take Better Notes</h1>
@@ -31,16 +32,16 @@ Update as changed -->
         </header>
         <main>
             <div class="upper_buttons">
-                <button class="standard_button">New Note</button>
-                <button  class="other_button">Dark Mode</button>
+                <button class="standard_button dark_palette">New Note</button>
+                <button onclick="change_palette()"  class="other_button dark_palette">Dark Mode</button>
             </div>
             <div class="note_area">
                 <textarea rows="5" cols="30" 
-                placeholder="Comment text."></textarea>
+                placeholder="Comment text." class="dark_palette"></textarea>
             </div>
             <div class="lower_buttons">
-                <button  class="standard_button">Save</button>
-                <button class="neg_button">Cancel</button>
+                <button  class="standard_button dark_palette">Save</button>
+                <button class="neg_button dark_palette">Cancel</button>
             </div>
         </main>
 
@@ -52,7 +53,7 @@ Update as changed -->
             </picture>
         </footer>
     </div>
-    <aside>
+    <aside class="dark_palette">
         <!--aside section moved as part of making it appear under the main
             section when viewing the page at a smaller scale.-->
         <h2>My Notes</h2>
@@ -60,7 +61,7 @@ Update as changed -->
             <li><p>Note 1</p></li>
             <li><p>Note 2</p></li>
         </ul>
-    </section>
+    </aside>
 </body>
 
 </html>

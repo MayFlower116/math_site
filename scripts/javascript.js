@@ -134,6 +134,24 @@
             //break
         //}
     //}
+/**/
+
+const btn = document.querySelector("button");
+
+function change_palette() {
+    document.body.classList.toggle("dark_palette")
+
+    const aside = document.querySelector("aside")
+    aside.classList.toggle("dark_palette")
+
+    const main_area = document.querySelector("div")
+    main_area.classList.toggle("dark_palette")
+
+    const textarea = document.querySelector("textarea")
+    textarea.classList.toggle("dark_palette")
+
+    btn.classList.toggle("dark_palette")
+}
 
 
 
