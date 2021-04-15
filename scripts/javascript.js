@@ -168,6 +168,15 @@ function change_palette() {
     cancel_btn.classList.toggle("dark_palette")
 }
 
+function cancel_button() {
+    const save_btn = document.getElementById("save");
+    const cancel_btn = document.getElementById("cancel");
+    const textarea = document.querySelector("textarea")
+    save_btn.style.visibility = "hidden";
+    cancel_btn.style.visibility = "hidden";
+    textarea.style.visibility = "hidden";
+}
+
 
 
 
