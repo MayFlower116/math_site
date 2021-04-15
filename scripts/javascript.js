@@ -147,7 +147,6 @@ function change_palette() {
     const main_area = document.querySelector("div")
     main_area.classList.toggle("dark_palette")
 
-    const textarea = document.querySelector("textarea")
     textarea.classList.toggle("dark_palette")
     new_note_btn.classList.toggle("dark_palette")
 
@@ -163,15 +162,12 @@ function change_palette() {
 }
 
 function cancel_button() {
-    const textarea = document.querySelector("textarea")
     save_btn.style.visibility = "hidden";
     cancel_btn.style.visibility = "hidden";
     textarea.style.visibility = "hidden";
 }
 
 function new_note_button() {
-    
-    const textarea = document.querySelector("textarea");
     if (textarea.style.visibility == "hidden") {
         save_btn.style.visibility = "visible";
         cancel_btn.style.visibility = "visible";
@@ -182,14 +178,30 @@ function new_note_button() {
     }
 }
 
-// var note {
-//     title:"note one",
-//     body:"this is my first note"
-// }
+
+
+let note = {
+    title: "note one",
+    body: "this is my first note",
+};
+
+let notesArray = []
+
+function save_note() {
+    // notesArray.push()
+    let note = {
+        title: prompt("Give your note a title."),
+        body: textarea.value
+    }
+    notesArray.push(note)
+    console.log(notesArray);
+    
+}
 
 // var notesArray = [];
 // const list = document.querySelector
 
+const textarea = document.querySelector("textarea");
 const color_mode_btn = document.getElementById("color_mode")
 const cancel_btn = document.getElementById("cancel");
 const save_btn = document.getElementById("save");
@@ -198,7 +210,7 @@ const new_note_btn = document.getElementById("new_note");
 color_mode_btn.addEventListener("click", change_palette);
 cancel_btn.addEventListener("click", cancel_button);
 new_note_btn.addEventListener("click", new_note_button);
-save_btn.addEventListener("click", /* sdsdsdsdsdsdsdsdsdsdsdsdssdsdsdsddsdsd*/);
+save_btn.addEventListener("click", save_note);
 
 
 
