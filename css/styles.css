@@ -13,18 +13,16 @@ html, body {
     padding:0;
     height: 100%;
     background-color: #191724; /*bg color moved here from separate body selector*/
+    font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, p, button, textarea, body {
-    font-family: 'Montserrat', sans-serif;
-    /*Body added to be affected by font family, font family removed where redundant*/
-}
+
 
 h1, h2 {
     text-align: center;
 }
 
-.aside {/*sidebar renamed to aside*/
+aside {/*sidebar renamed to aside*/
     /*  */
     background-color: #26233A;
     color: #F09EB5;
@@ -124,11 +122,10 @@ button {
 @media screen and (min-width: 600px) {
     body {
         display: flex;
-        grid-row: 100%;
         flex-direction: row-reverse;
     }
 
-    .aside { /*sidebar renamed to aside*/
+    aside { /*sidebar renamed to aside*/
         width: 20%;
     }
 
