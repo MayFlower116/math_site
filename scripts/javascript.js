@@ -177,6 +177,23 @@ function cancel_button() {
     textarea.style.visibility = "hidden";
 }
 
+function new_note_button() {
+    
+    const textarea = document.querySelector("textarea");
+    if (textarea.style.visibility == "hidden") {
+        const cancel_btn = document.getElementById("cancel");
+        const save_btn = document.getElementById("save");
+        save_btn.style.visibility = "visible";
+        cancel_btn.style.visibility = "visible";
+        textarea.style.visibility = "visible";
+    }
+    else {
+        textarea.value = ""
+    }
+}
+
+
+
 
 
 
