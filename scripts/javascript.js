@@ -189,13 +189,18 @@ let notesArray = []
 
 function save_note() {
     // notesArray.push()
+    given_title = prompt("Give your note a title.")
     let note = {
-        title: prompt("Give your note a title."),
+        title: given_title,
         body: textarea.value
     }
     notesArray.push(note)
-    console.log(notesArray);
-    
+
+    let notes_list = document.getElementById("notes_list")
+    let listed_title = document.createElement("li")
+    let test = document.createTextNode(given_title)
+    listed_title.appendChild(test)
+    notes_list.appendChild(listed_title)
 }
 
 // var notesArray = [];
