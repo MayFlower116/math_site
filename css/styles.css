@@ -1,10 +1,20 @@
 /* Palette
-##26233A - light grey - aside bg, textbox bg
+        DARK
+#26233A - light grey - aside bg, textbox bg
 #191724 - black - primary bg
 #F09EB5 - soft pink - text, buttons, textbox border
 #f6c177 - soft gold - alternate text, alternate buttons
 #9ccfd8 - pale tuqoise - contrasting button
 #26233a - softer black - button text
+
+        LIGHT
+#e0def4 - light grey - aside bg, textbox bg
+#c4a7e7 - soft purple - primary bg
+#550C21 - dark crimson - text
+#eb6f92 - pink - buttons, textbox border
+#ea9d34 - gold - alternate text, alternate buttons
+#9ccfd8 - pale ocean blue - contrasting button
+#000000 - pure black - button text
 */
 
 /* general */
@@ -12,10 +22,10 @@ html, body {
     margin:0;
     padding:0;
     height: 100%;
-    background-color: #191724; /*bg color moved here from separate body selector*/
+    background-color: #c4a7e7; /*CHANGE*/
 }
 body.dark_palette {
-    background-color: #7e6fcf; /*bg color moved here from separate body selector */
+    background-color: #191724; /*bg color moved here from separate body selector */
 }
 
 h1, h2, p, button, textarea, body {
@@ -29,18 +39,19 @@ h1, h2 {
 
 aside {/*sidebar renamed to aside*/
     /*  */
-    background-color: #26233A;
-    color: #F09EB5;
+    
+    background-color: #e0def4;/*CHANGE*/
+    color: #550C21;/*CHANGE*/
     padding: 5px;
     margin: 0%;
 }
 aside.dark_palette {
-    background-color: #F09EB5;
-    color: #26233A;
+    background-color: #26233A;
+    color: #F09EB5;
 }
 
 .main_area {
-    color: #220f14;
+    color: #550C21;/*CHANGE*/
     padding: 5px;
     width: 100%; /*width adjusted to make page look right on smaller screens*/
 }
@@ -76,9 +87,9 @@ textarea {
     padding: 5px;
     line-height: 1.5;
     border-radius: 5px;
-    border: 3px solid #440c1c;
-    background-color: #6558bd;
-    color: #5e2837;
+    border: 3px solid #550C21;/*CHANGE*/
+    background-color: #e0def4;/*CHANGE*/
+    color: #550C21;/*CHANGE*/
     resize: none;
 }
 textarea.dark_palette {
@@ -110,7 +121,7 @@ textarea.dark_palette {
 /*Redundant content in button class selectors moved to button element selector*/
 
 button {
-    color: #a89fe2;
+    color: #000000;/*CHANGE*/
     min-width: fit-content;
     text-align: center;
     padding: 5px 10px;
@@ -122,21 +133,21 @@ button.dark_palette {
 }
 
 .standard_button {
-    background-color:#500318;
+    background-color:#eb6f92;/*CHANGE*/
 }
 .standard_button.dark_palette{
     background-color:#F09EB5;
 }
 
 .neg_button {
-    background-color:#015564;
+    background-color:#9ccfd8;/*CHANGE*/
 }
 .neg_button.dark_palette{
     background-color:#9ccfd8;
 }
 
 .other_button {
-    background-color:#774500;
+    background-color:#ea9d34;/*CHANGE*/
 }
 .other_button.dark_palette{
     background-color:#f6c177;

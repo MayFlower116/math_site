@@ -149,28 +149,20 @@ function change_palette() {
 
     const textarea = document.querySelector("textarea")
     textarea.classList.toggle("dark_palette")
-
-    const new_note_btn = document.getElementById("new_note");
     new_note_btn.classList.toggle("dark_palette")
 
-    const color_mode_btn = document.getElementById("color_mode")
+    
     if (color_mode_btn.textContent === "Dark Mode") {
         color_mode_btn.textContent = "Light Mode";
     } else {
         color_mode_btn.textContent = "Dark Mode";
     }
     color_mode_btn.classList.toggle("dark_palette")
-
-    const save_btn = document.getElementById("save");
     save_btn.classList.toggle("dark_palette")
-
-    const cancel_btn = document.getElementById("cancel");
     cancel_btn.classList.toggle("dark_palette")
 }
 
 function cancel_button() {
-    const save_btn = document.getElementById("save");
-    const cancel_btn = document.getElementById("cancel");
     const textarea = document.querySelector("textarea")
     save_btn.style.visibility = "hidden";
     cancel_btn.style.visibility = "hidden";
@@ -181,8 +173,6 @@ function new_note_button() {
     
     const textarea = document.querySelector("textarea");
     if (textarea.style.visibility == "hidden") {
-        const cancel_btn = document.getElementById("cancel");
-        const save_btn = document.getElementById("save");
         save_btn.style.visibility = "visible";
         cancel_btn.style.visibility = "visible";
         textarea.style.visibility = "visible";
@@ -192,7 +182,23 @@ function new_note_button() {
     }
 }
 
+// var note {
+//     title:"note one",
+//     body:"this is my first note"
+// }
 
+// var notesArray = [];
+// const list = document.querySelector
+
+const color_mode_btn = document.getElementById("color_mode")
+const cancel_btn = document.getElementById("cancel");
+const save_btn = document.getElementById("save");
+const new_note_btn = document.getElementById("new_note");
+
+color_mode_btn.addEventListener("click", change_palette);
+cancel_btn.addEventListener("click", cancel_button);
+new_note_btn.addEventListener("click", new_note_button);
+save_btn.addEventListener("click", /* sdsdsdsdsdsdsdsdsdsdsdsdssdsdsdsddsdsd*/);
 
 
 
